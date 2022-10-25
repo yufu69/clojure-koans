@@ -3,6 +3,11 @@ bin
 releases
 *.jar
 
+## 要らないのできたから .gitignore に追加
+.calva/
+.clj-kondo/
+.lsp/
+
 # Created by https://www.gitignore.io/api/clojure,osx,linux,windows,leiningen,intellij,eclipse,sublimetext
 
 ### Clojure ###
