@@ -1,0 +1,280 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/yufu/source/yufu/clojure-koans; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:64911 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉koan-engine.runner꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉koan-engine.runner꞉> 
+; Jack-in done.
+clj꞉koan-engine.runner꞉> 
+true
+clj꞉koans.02-strings꞉> 
+13
+clj꞉koans.02-strings꞉> 
+nil
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+nil
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.02-strings꞉> 
+nil
+clj꞉koans.02-strings꞉> 
+true
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+false
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+false
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+false
+clj꞉koans.03-lists꞉> 
+(:b :c :d :e)
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+false
+clj꞉koans.03-lists꞉> 
+()
+clj꞉koans.03-lists꞉> 
+; Execution error (IllegalStateException) at koans.03-lists/eval10766 (REPL:37).
+; Can't pop empty list
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+()
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+nil
+clj꞉koans.03-lists꞉> 
+; Execution error (ExceptionInfo) at koans.03-lists/eval10825 (REPL:4).
+; Count your blessings
+; (= 21 (count (quote (dracula dooku chocula))))
+clj꞉koans.03-lists꞉> 
+false
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+false
+clj꞉koans.03-lists꞉> 
+3
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.03-lists꞉> 
+nil
+clj꞉koans.03-lists꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+false
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+true
+clj꞉koans.04-vectors꞉> 
+nil
+clj꞉koans.04-vectors꞉> 
+; Execution error (IllegalArgumentException) at koans.05-sets/eval10963 (REPL:7).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉koans.05-sets꞉> 
+; Execution error (ClassCastException) at koans.05-sets/eval10965 (REPL:7).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉koans.05-sets꞉> 
+true
+clj꞉koans.05-sets꞉> 
+true
+clj꞉koans.05-sets꞉> 
+true
+clj꞉koans.05-sets꞉> 
+true
+clj꞉koans.05-sets꞉> 
+true
+clj꞉koans.05-sets꞉> 
+nil
+clj꞉koans.05-sets꞉> 
+true
+clj꞉koans.06-maps꞉> 
+"aa1"
+clj꞉koans.06-maps꞉> 
+; Syntax error (IllegalArgumentException) compiling new at (06_maps.clj:5:2).
+; Unable to resolve classname: resolve
+clj꞉koans.06-maps꞉> 
+#object[java.net.URI 0x1024bd97 "http://example.com/piyo"]
+clj꞉koans.06-maps꞉> 
+true
+clj꞉koans.06-maps꞉> 
+true
+clj꞉koans.06-maps꞉> 
+false
+clj꞉koans.06-maps꞉> 
+true
+clj꞉koans.06-maps꞉> 
+true
+clj꞉koans.06-maps꞉> 
+true
+clj꞉koans.06-maps꞉> 
+nil
+clj꞉koans.06-maps꞉> 
+false
+clj꞉koans.06-maps꞉> 
+{:a 1, :b 2, :c 3}
+clj꞉koans.06-maps꞉> 
+{:b 1, :c 3}
+clj꞉koans.06-maps꞉> 
+{:a 1, :b 2, :c 3}
+clj꞉koans.06-maps꞉> 
+true
+clj꞉koans.06-maps꞉> 
+; Syntax error compiling at (06_maps.clj:0:0).
+; Unable to resolve symbol: a in this context
+clj꞉koans.06-maps꞉> 
+[:a 1]
+clj꞉koans.06-maps꞉> 
+; Syntax error compiling at (07_functions.clj:11:9).
+; Unable to resolve symbol: square in this context
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:11:9).
+; Unable to resolve symbol: square in this context
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:11:9).
+; Unable to resolve symbol: square in this context
+clj꞉koans.07-functions꞉> 
+9
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:11:9).
+; Unable to resolve symbol: square in this context
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:11:9).
+; Unable to resolve symbol: square in this context
+clj꞉koans.07-functions꞉> 
+81
+clj꞉koans.07-functions꞉> 
+#function[clojure.core/=]
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:11:9).
+; Unable to resolve symbol: square in this context
+clj꞉koans.07-functions꞉> 
+#'koans.07-functions/square
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:14:9).
+; Unable to resolve symbol: multiply-by-ten in this context
+clj꞉koans.07-functions꞉> 
+#'koans.07-functions/multiply-by-ten
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:0:0).
+; Unable to resolve symbol: %2 in this context
+clj꞉koans.07-functions꞉> 
+; Syntax error compiling at (07_functions.clj:29:17).
+; Unable to resolve symbol: %1 in this context
+clj꞉koans.07-functions꞉> 
+; Execution error (ClassCastException) at koans.07-functions/eval11196 (REPL:29).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉koans.07-functions꞉> 
+; Execution error (ClassCastException) at koans.07-functions/eval11200 (REPL:29).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉koans.07-functions꞉> 
+4
+clj꞉koans.07-functions꞉> 
+5
+clj꞉koans.07-functions꞉> 
+; Execution error (ClassCastException) at koans.07-functions/eval11204 (REPL:29).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+; Execution error (ArityException) at koans.07-functions/eval11246 (REPL:36).
+; Wrong number of args (0) passed to: koans.07-functions/eval11246/fn--11247
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
+#'koans.07-functions/square
+clj꞉koans.07-functions꞉> 
+true
+clj꞉koans.07-functions꞉> 
